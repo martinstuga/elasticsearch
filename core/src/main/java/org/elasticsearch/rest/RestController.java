@@ -80,7 +80,7 @@ public class RestController extends AbstractLifecycleComponent<RestController> {
     }
 
     /**
-     * Controls which REST headers get copied over from a {@link org.elasticsearch.rest.RestRequest} to
+     * Controls which REST headers get copied over from a {@link RestRequest} to
      * its corresponding {@link org.elasticsearch.transport.TransportRequest}(s).
      *
      * By default no headers get copied but it is possible to extend this behaviour via plugins by calling this method.
@@ -93,7 +93,7 @@ public class RestController extends AbstractLifecycleComponent<RestController> {
     }
 
     /**
-     * Returns the REST headers that get copied over from a {@link org.elasticsearch.rest.RestRequest} to
+     * Returns the REST headers that get copied over from a {@link RestRequest} to
      * its corresponding {@link org.elasticsearch.transport.TransportRequest}(s).
      * By default no headers get copied but it is possible to extend this behaviour via plugins by calling {@link #registerRelevantHeaders(String...)}.
      */
